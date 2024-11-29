@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inventory Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Inventory Management</h1>
+  <table id="inventoryTable"></table>
+
+  <h2>Place Order</h2>
+  <form id="orderForm">
+    <label for="numItems">Number of Items:</label>
+    <input type="number" id="numItems" name="numItems" min="1" required>
+    <br>
+    <div id="orderItems"></div>
+    <button type="button" onclick="processOrder()">Place Order</button>
+  </form>
+
+  <script src="main.js"></script>
+</body>
+</html>
